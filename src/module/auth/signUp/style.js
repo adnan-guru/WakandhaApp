@@ -1,9 +1,10 @@
+import {colors} from '../../../constant/color';
 import {StyleSheet} from 'react-native';
 export const style = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
-    backgroundColor: 'black',
+    backgroundColor: colors.secondryColor,
   },
   logo: {
     width: 92,
@@ -26,10 +27,11 @@ export const style = StyleSheet.create({
   },
 
   bottomTextView: {
+    marginTop: 25,
+    marginBottom: 30,
     flexDirection: 'row',
-    alignSelf: 'center',
-    marginTop: 174,
-    marginBottom: 145,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   bottomText: {
     // fontFamily: 'IBMPlexSans',

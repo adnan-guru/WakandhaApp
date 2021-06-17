@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-import {style} from './style.js';
+import {style} from './FriendsCardStyle.js';
 
-export default function Friends({item}) {
+export default function FriendsCard({item}) {
   return (
     <View style={style.cardView}>
       <View style={style.imageRow}>

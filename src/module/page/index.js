@@ -6,7 +6,6 @@ import {
   Image,
   Text,
   TouchableOpacity,
-  TextInput,
   ImageBackground,
 } from 'react-native';
 import {style} from './style.js';

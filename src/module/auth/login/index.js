@@ -1,8 +1,9 @@
 import React from 'react';
-import {Text, ScrollView, Image, View, StatusBar} from 'react-native';
+import {Text, ScrollView, Image, View} from 'react-native';
 import {style} from './style.js';
-import Input from '../../../commonComponents/inputs';
-import Button from '../../../commonComponents/buttons';
+import Input from '../../../commonComponents/input/Input.js';
+import Button from '../../../commonComponents/buttons/Button.js';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 export default function Login({navigation}) {
   const data = [
     {title: 'Email', placeholder: 'Type your email'},
@@ -10,8 +11,6 @@ export default function Login({navigation}) {
   ];
   return (
     <ScrollView style={style.container}>
-      <StatusBar backgroundColor="blue" barStyle="light-content" />
-
       <Image
         style={style.logo}
         source={require('../../../assets/images/appLogo.png')}
@@ -27,7 +26,9 @@ export default function Login({navigation}) {
           <Text style={[style.text, style.bottomText]}>
             Don’t have an account?
           </Text>
-          <Text style={[style.text, style.bottomSubText]}>Sign Up</Text>
+          <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
+            <Text style={[style.text, style.bottomSubText]}>Sign Up</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </ScrollView>

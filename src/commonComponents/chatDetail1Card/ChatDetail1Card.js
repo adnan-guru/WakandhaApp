@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Image, Text} from 'react-native';
-import {style} from './style.js';
-export default function Friends({navigation}) {
+import {style} from './ChatDetail1CardStyle.js';
+export default function ChatDetail1Card({navigation}) {
   return (
     <>
       <View style={{height: 210}}>

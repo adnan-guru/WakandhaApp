@@ -1,4 +1,5 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
+const APPBAR_HEIGHT = Platform.OS === 'ios' ? 20 : 3;
 export const style = StyleSheet.create({
   container: {
     flex: 1,
@@ -34,7 +35,8 @@ export const style = StyleSheet.create({
     height: 57,
     backgroundColor: '#1D1D26',
     borderRadius: 37,
-    marginBottom: 25,
+    marginBottom: 20,
+    marginTop: 5,
     alignSelf: 'center',
   },
   emoji: {
@@ -43,10 +45,11 @@ export const style = StyleSheet.create({
   },
   input: {
     position: 'absolute',
-    top: 20,
     left: 64,
     fontSize: 14,
     fontWeight: '500',
+    top: APPBAR_HEIGHT,
+    alignItems: 'center',
   },
   line: {
     position: 'absolute',

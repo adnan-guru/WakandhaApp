@@ -22,10 +22,13 @@ export default function UserProfile({navigation}) {
             style={style.headerImage}
             source={require('../../assets/images/Rectangle(3).png')}
           />
-          <Image
-            style={style.backIcon}
-            source={require('../../assets/images/Back(1).png')}
-          />
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Image
+              style={style.backIcon}
+              source={require('../../assets/images/Back(1).png')}
+            />
+          </TouchableOpacity>
+
           <Image
             style={style.moreIcon}
             source={require('../../assets/images/More(4).png')}

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TextInput} from 'react-native';
-import {style} from './style.js';
-export default function Inputs({item}) {
+import {style} from './InputStyle.js';
+export default function Input({item}) {
   return (
     <View style={style.buttonView}>
       <Text style={style.inputTitle}>{item.title}</Text>

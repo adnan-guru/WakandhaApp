@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfileCard from '../../../../commonComponents/homeProfileCard';
+import ProfileCard from '../../../../commonComponents/homeProfileCard/HomeProfileCard.js';
 import image from '../../../../assets/images/MaskGroup.png';
 import image2 from '../../../../assets/images/MaskGroup(1).png';
 

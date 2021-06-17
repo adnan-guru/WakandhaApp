@@ -1,8 +1,8 @@
 import React from 'react';
-import {Text, ScrollView, Image, View, ImageBackground} from 'react-native';
-import {style} from './style.js';
+import {Text, Image, View, ImageBackground} from 'react-native';
+import {style} from './HomeProfileCardStyle.js';
 import image from '../../assets/images/UserStory.png';
-export default function HomePage({item}) {
+export default function HomeProfileCard({item}) {
   return (
     <View style={{marginLeft: 7}}>
       <View style={style.card}>

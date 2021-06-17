@@ -1,7 +1,7 @@
 import React from 'react';
 import {ScrollView, View, StatusBar, Text, Image} from 'react-native';
 import {style} from './style.js';
-import FriendCard from '../../../../commonComponents/friendsCard';
+import FriendCard from '../../../../commonComponents/friendsCard/FriendsCard.js';
 export default function Friends({navigation}) {
   const cardData = [
     {image: require('../../../../assets/images/Ellipse25.png')},

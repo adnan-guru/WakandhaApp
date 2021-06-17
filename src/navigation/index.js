@@ -1,11 +1,14 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+import {style} from './style.js';
+import {ScrollView, Image, View, StatusBar} from 'react-native';
+import Chat from '../module/chat/chatTabsScreens/chat';
 import Login from '../module/auth/login';
 import SignUp from '../module/auth/signUp';
 import SignUpWithPhone from '../module/auth/signUpWithPhone';
 import Tabs from '../module/homeTabs/tabs';
-import ChatTabs from '../module/chat/Tabs';
 import ProductDetaile from '../module/homeTabs/tabsScreens/products/productDetaile';
 import AddProduct from '../module/homeTabs/tabsScreens/products/addProduct';
 import ChatDetail from '../module/chat/chatTabsScreens/chatDetail';
@@ -18,6 +21,8 @@ import OnBoarding from '../module/onBoarding';
 import Payment from '../module/payment';
 
 const Stack = createStackNavigator();
+const Tab = createMaterialTopTabNavigator();
+
 function StackNavigator() {
   return (
     <NavigationContainer>
@@ -45,3 +50,56 @@ function StackNavigator() {
   );
 }
 export default StackNavigator;
+function ChatTabs() {
+  return (
+    <View style={style.main}>
+      <ScrollView>
+        <StatusBar backgroundColor="blue" barStyle="light-content" />
+        <View style={style.container}>
+          <View style={style.headerView}>
+            <View>
+              <Image source={require('../assets/images/Ellipse1.png')} />
+            </View>
+            <View>
+              <Image
+                style={style.headerLogo}
+                source={require('../assets/images/image1.png')}
+              />
+            </View>
+            <View style={style.iconRow}>
+              <Image
+                style={style.searchIcon}
+                source={require('../assets/icons/loupe1.png')}
+              />
+              <Image
+                style={style.logoIcon}
+                source={require('../assets/icons/Group62.png')}
+              />
+            </View>
+          </View>
+        </View>
+        <View>
+          <Tab.Navigator
+            tabBarOptions={{
+              activeTintColor: '#DDB937',
+              showLabel: true,
+              showIcon: false,
+
+              style: {backgroundColor: 'black', marginTop: 21},
+              indicatorStyle: {
+                backgroundColor: '#DDB937',
+              },
+              labelStyle: {
+                fontSize: 14,
+                fontWeight: '700',
+              },
+            }}>
+            <Tab.Screen name="CHATS" component={Chat} />
+            <Tab.Screen name="WAK'S" component={Chat} />
+            <Tab.Screen name="CALLS" component={Chat} />
+          </Tab.Navigator>
+        </View>
+      </ScrollView>
+    </View>
+  );
+}

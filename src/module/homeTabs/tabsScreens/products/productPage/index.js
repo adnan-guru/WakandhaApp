@@ -25,6 +25,14 @@ export default function ProductPage({navigation}) {
       image: require('../../../../../assets/images/Rectangle16.png'),
       onPress: onPressHandler,
     },
+    {
+      image: require('../../../../../assets/images/Rectangle15.png'),
+      onPress: onPressHandler,
+    },
+    {
+      image: require('../../../../../assets/images/Rectangle16.png'),
+      onPress: onPressHandler,
+    },
   ];
   return (
     <ScrollView style={style.container}>

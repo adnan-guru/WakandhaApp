@@ -1,4 +1,5 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
+const CARD_MARGIN = Platform.OS === 'ios' ? 15 : 10;
 export const style = StyleSheet.create({
   container: {
     flex: 1,
@@ -138,5 +139,7 @@ export const style = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'space-between',
     marginBottom: 43,
+    marginHorizontal: CARD_MARGIN,
+    marginTop: 17,
   },
 });

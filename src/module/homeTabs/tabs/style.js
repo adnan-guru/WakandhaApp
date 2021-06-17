@@ -1,4 +1,7 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
+const APPBAR_HEIGHT = Platform.OS === 'ios' ? 76 : 20;
+const HR_LINE = Platform.OS === 'ios' ? 177 : 123;
+
 export const style = StyleSheet.create({
   main: {
     flex: 1,
@@ -6,7 +9,7 @@ export const style = StyleSheet.create({
     backgroundColor: 'black',
   },
   headerView: {
-    marginTop: 76,
+    marginTop: APPBAR_HEIGHT,
     width: '100%',
     height: 33,
     flexDirection: 'row',
@@ -38,6 +41,6 @@ export const style = StyleSheet.create({
     height: 2,
     backgroundColor: '#343434',
     position: 'absolute',
-    top: 177,
+    top: HR_LINE,
   },
 });

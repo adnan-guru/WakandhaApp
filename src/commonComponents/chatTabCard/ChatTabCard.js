@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
-import {style} from './style.js';
+import {style} from './ChatTabCardStyle.js';
 
 export default function ChatTabCard({item}) {
   return (

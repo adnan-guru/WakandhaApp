@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text, ScrollView, View, StatusBar, Image} from 'react-native';
 import {style} from './style.js';
-import Input from '../../../../../commonComponents/inputs';
-import Button from '../../../../../commonComponents/buttons';
+import Input from '../../../../../commonComponents/input/Input.js';
+import Button from '../../../../../commonComponents/buttons/Button.js';
 export default function AddProduct({navigation}) {
   const inputData = [
     {title: 'Title', placeholder: 'Type here'},

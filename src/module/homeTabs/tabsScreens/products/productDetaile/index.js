@@ -107,11 +107,11 @@ export default function TabVideo({navigation}) {
         <Text style={[style.paraTitle, style.productCardTitle]}>
           More Products
         </Text>
-        <View style={style.card}>
-          {cardData.map(item => {
-            return <Card item={item} />;
-          })}
-        </View>
+      </View>
+      <View style={style.card}>
+        {cardData.map(item => {
+          return <Card item={item} />;
+        })}
       </View>
     </ScrollView>
   );

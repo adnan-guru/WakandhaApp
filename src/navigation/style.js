@@ -7,6 +7,9 @@ export const style = StyleSheet.create({
     width: '100%',
     backgroundColor: 'black',
   },
+  container: {
+    marginHorizontal: 18,
+  },
   headerView: {
     marginTop: APPBAR_HEIGHT,
     width: '100%',

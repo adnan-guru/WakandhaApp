@@ -1,11 +1,10 @@
 import React from 'react';
-import {Text, ScrollView, Image, View, StatusBar} from 'react-native';
+import {Text, ScrollView, Image, View} from 'react-native';
 import {style} from './style.js';
-import Button from '../../../commonComponents/buttons';
+import Button from '../../../commonComponents/buttons/Button.js';
 export default function SignUpWithPhone({navigation}) {
   return (
     <ScrollView style={style.container}>
-      <StatusBar backgroundColor="blue" barStyle="light-content" />
       <Image
         style={style.logo}
         source={require('../../../assets/images/appLogo.png')}
@@ -36,11 +35,7 @@ export default function SignUpWithPhone({navigation}) {
         </View>
       </View>
       <View style={style.button}>
-        <Button onPress={() => navigation.navigate('Tabs')} title="Next" />
-      </View>
-      <View style={style.bottomTextView}>
-        <Text style={style.bottomText}>Already have an account?</Text>
-        <Text style={style.bottomSubText}>Sign Up</Text>
+        <Button onPress={() => navigation.navigate('Tabs')} title="Sign Up" />
       </View>
     </ScrollView>
   );

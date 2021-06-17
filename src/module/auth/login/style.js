@@ -35,17 +35,21 @@ export const style = StyleSheet.create({
     marginTop: 33,
   },
   bottomTextView: {
+    width: '100%',
+    marginBottom: 30,
     flexDirection: 'row',
-    alignSelf: 'center',
-    marginTop: 126,
-    marginBottom: 145,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   bottomText: {
     fontWeight: '700',
+    marginTop: 10,
+    textAlign: 'center',
   },
   bottomSubText: {
     fontWeight: '700',
     color: '#DDB937',
     marginLeft: 5,
+    marginTop: 10,
   },
 });

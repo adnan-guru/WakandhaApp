@@ -1,12 +1,12 @@
 import React from 'react';
-import {ScrollView, View, Image, Text} from 'react-native';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import {style} from './style.js';
+import {View, Image, Text} from 'react-native';
+import {style} from './ChatDetailCardStyle.js';
 
-export default function Friends(props) {
+export default function ChatDetailCard(props) {
   return (
     <View>
       {props.isLeft ? (
+        // eslint-disable-next-line react-native/no-inline-styles
         <View style={{height: 108}}>
           <Image
             style={style.image1}
@@ -26,6 +26,7 @@ export default function Friends(props) {
           <Text style={style.subTitle}>{props.subTitle}</Text>
         </View>
       ) : (
+        // eslint-disable-next-line react-native/no-inline-styles
         <View style={{height: 115}}>
           <Image
             style={style.rightImage1}

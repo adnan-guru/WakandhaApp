@@ -1,7 +1,7 @@
 import React from 'react';
 import {ScrollView, StatusBar, View, Image} from 'react-native';
 import {style} from './style.js';
-import Card from '../../../../commonComponents/chatTabCard';
+import Card from '../../../../commonComponents/chatTabCard/ChatTabCard.js';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 export default function Chat({navigation}) {
   function Next() {

@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* WakandhaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WakandhaAppTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		54B4912A267A15F300491986 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		54B4912D267A15FB00491986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		BC5D56B53F3641AF9395B93A /* libPods-WakandhaApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B76E84C377F849BDCA948F71 /* libPods-WakandhaApp.a */; };
 		D025ABD02990CAC65D98934D /* libPods-WakandhaApp-WakandhaAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410F776FAD01A43F6586A2FD /* libPods-WakandhaApp-WakandhaAppTests.a */; };
 		DC3A40CCDB484BF882DBB586 /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49FA5FE6BE664C54A75DF6D3 /* IBMPlexSans-Bold.ttf */; };
@@ -40,8 +40,10 @@
 		2824F7F60CBB0CFD7A6D1BC9 /* Pods-WakandhaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakandhaApp.debug.xcconfig"; path = "Target Support Files/Pods-WakandhaApp/Pods-WakandhaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2A43E8BA8EB03DEC5E1AD33F /* Pods-WakandhaApp-WakandhaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakandhaApp-WakandhaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WakandhaApp-WakandhaAppTests/Pods-WakandhaApp-WakandhaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		410F776FAD01A43F6586A2FD /* libPods-WakandhaApp-WakandhaAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakandhaApp-WakandhaAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49FA5FE6BE664C54A75DF6D3 /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "IBMPlexSans-Bold.ttf"; path = "../src/constant/fonts/IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
+		49FA5FE6BE664C54A75DF6D3 /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "IBMPlexSans-Bold.ttf"; path = "../src/constant/fonts/IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
 		530017314DB8564C4E343E5F /* Pods-WakandhaApp-WakandhaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakandhaApp-WakandhaAppTests.release.xcconfig"; path = "Target Support Files/Pods-WakandhaApp-WakandhaAppTests/Pods-WakandhaApp-WakandhaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		54B4911A267A15D000491986 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../src; sourceTree = "<group>"; };
+		54B49122267A15E300491986 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../src; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = WakandhaApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A28992CF3BC9CD06EBAB82B4 /* Pods-WakandhaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakandhaApp.release.xcconfig"; path = "Target Support Files/Pods-WakandhaApp/Pods-WakandhaApp.release.xcconfig"; sourceTree = "<group>"; };
 		B76E84C377F849BDCA948F71 /* libPods-WakandhaApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakandhaApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +118,6 @@
 				2A43E8BA8EB03DEC5E1AD33F /* Pods-WakandhaApp-WakandhaAppTests.debug.xcconfig */,
 				530017314DB8564C4E343E5F /* Pods-WakandhaApp-WakandhaAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +131,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				54B4911A267A15D000491986 /* src */,
+				54B49122267A15E300491986 /* src */,
 				13B07FAE1A68108700A75B9A /* WakandhaApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WakandhaAppTests */,
@@ -158,7 +161,6 @@
 				49FA5FE6BE664C54A75DF6D3 /* IBMPlexSans-Bold.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B4912D267A15FB00491986 /* LaunchScreen.storyboard in Resources */,
+				54B4912A267A15F300491986 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				DC3A40CCDB484BF882DBB586 /* IBMPlexSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@ export const style = StyleSheet.create({
   },
   backIcon: {
     position: 'absolute',
-    top: 44,
+    top: -200,
     left: 14,
   },
   moreIcon: {

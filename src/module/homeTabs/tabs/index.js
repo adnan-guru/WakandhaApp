@@ -13,7 +13,7 @@ const Tab = createMaterialTopTabNavigator();
 function MyTabs({navigation}) {
   return (
     <ScrollView style={style.main}>
-      <StatusBar backgroundColor="blue" barStyle="light-content" />
+      <StatusBar backgroundColor="red" barStyle="red" />
       <View style={{marginHorizontal: 18}}>
         <View style={style.headerView}>
           <View>

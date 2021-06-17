@@ -1,9 +1,10 @@
+import {colors} from '../../../constant/color';
 import {StyleSheet} from 'react-native';
 export const style = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
-    backgroundColor: 'black',
+    backgroundColor: colors.secondryColor,
   },
   logo: {
     width: 92,
@@ -29,7 +30,6 @@ export const style = StyleSheet.create({
     fontWeight: '400',
     fontSize: 14,
     lineHeight: 18.2,
-    borderWidth: 1,
   },
   dropDownView: {
     width: '100%',
@@ -64,7 +64,7 @@ export const style = StyleSheet.create({
     borderWidth: 1,
   },
   phoneView: {
-    width: 220,
+    width: 200,
   },
   codeText: {
     color: '#FFFFFF',
@@ -76,32 +76,7 @@ export const style = StyleSheet.create({
     justifyContent: 'space-between',
     marginHorizontal: 33,
   },
-  bottomTextView: {
-    flexDirection: 'row',
-    alignSelf: 'center',
-    marginTop: 174,
-    marginBottom: 145,
-  },
-  bottomText: {
-    // fontFamily: 'IBMPlexSans',
-    fontWeight: '700',
-    fontSize: 12,
-    lineHeight: 15.6,
-    color: 'rgba(255, 255, 255, 1)',
-    textAlign: 'center',
-    marginTop: 33,
-  },
-  bottomSubText: {
-    // fontFamily: 'IBMPlexSans',
 
-    fontWeight: '700',
-    color: '#DDB937',
-    marginLeft: 5,
-    fontSize: 12,
-    lineHeight: 15.6,
-    textAlign: 'center',
-    marginTop: 33,
-  },
   button: {
     marginHorizontal: 33,
   },

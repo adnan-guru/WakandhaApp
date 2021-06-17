@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {ScrollView, StatusBar, View, Image, Text} from 'react-native';
 import {style} from './style.js';
 import CheckBox from 'react-native-check-box';
-import Button from '../../commonComponents/buttons';
+import Button from '../../commonComponents/buttons/Button.js';
 export default function UserProfile({navigation}) {
   const [isSelected, setSelection] = useState(false);
   return (
