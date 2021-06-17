@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {style} from './style.js';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import Card from '../../../../commonComponents/chatDetail1Card/ChatDetail1Card.js';
+import Card from '../../../commonComponents/chatDetail1Card/ChatDetail1Card.js';
 export default function Friends({navigation}) {
   return (
     <View style={style.container}>
@@ -19,7 +19,7 @@ export default function Friends({navigation}) {
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image
               style={style.backArrow}
-              source={require('../../../../assets/images/Vector1(1).png')}
+              source={require('../../../assets/images/Vector1(1).png')}
             />
           </TouchableOpacity>
 
@@ -29,7 +29,7 @@ export default function Friends({navigation}) {
           <TouchableOpacity>
             <Image
               style={style.searchIcon}
-              source={require('../../../../assets/images/Group40.png')}
+              source={require('../../../assets/images/Group40.png')}
             />
           </TouchableOpacity>
         </View>
@@ -43,7 +43,7 @@ export default function Friends({navigation}) {
         <View>
           <Image
             style={style.emoji}
-            source={require('../../../../assets/images/emoji.png')}
+            source={require('../../../assets/images/emoji.png')}
           />
           <TextInput
             style={style.input}
@@ -53,11 +53,11 @@ export default function Friends({navigation}) {
 
           <Image
             style={style.line}
-            source={require('../../../../assets/images/voice.png')}
+            source={require('../../../assets/images/voice.png')}
           />
           <Image
             style={style.camera}
-            source={require('../../../../assets/images/camera.png')}
+            source={require('../../../assets/images/camera.png')}
           />
         </View>
       </View>

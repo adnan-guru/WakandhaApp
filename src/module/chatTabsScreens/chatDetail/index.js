@@ -2,7 +2,7 @@ import React from 'react';
 import {ScrollView, View, Image, Text, TextInput} from 'react-native';
 import {style} from './style.js';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import ChatCard from '../../../../commonComponents/chatDetailCard/ChatDetailCard.js';
+import ChatCard from '../../../commonComponents/chatDetailCard/ChatDetailCard.js';
 export default function Friends({navigation}) {
   return (
     <View style={style.container}>
@@ -11,13 +11,13 @@ export default function Friends({navigation}) {
           <TouchableOpacity onPress={() => navigation.navigate('ChatTabs')}>
             <Image
               style={style.backArroeIcon}
-              source={require('../../../../assets/images/Vector1(1).png')}
+              source={require('../../../assets/images/Vector1(1).png')}
             />
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('ChatDetail1')}>
             <Image
               style={style.image}
-              source={require('../../../../assets/images/Group13(4).png')}
+              source={require('../../../assets/images/Group13(4).png')}
             />
           </TouchableOpacity>
 
@@ -28,18 +28,16 @@ export default function Friends({navigation}) {
         </View>
         <View style={style.headerIcons}>
           <View style={style.iconView}>
-            <Image
-              source={require('../../../../assets/images/videoIcon.png')}
-            />
+            <Image source={require('../../../assets/images/videoIcon.png')} />
           </View>
           <View style={style.iconView}>
             <Image
               style={style.phoneIcon}
-              source={require('../../../../assets/images/call1.png')}
+              source={require('../../../assets/images/call1.png')}
             />
           </View>
           <View style={style.iconView}>
-            <Image source={require('../../../../assets/images/More(2).png')} />
+            <Image source={require('../../../assets/images/More(2).png')} />
           </View>
         </View>
       </View>
@@ -82,7 +80,7 @@ export default function Friends({navigation}) {
         <View>
           <Image
             style={style.emoji}
-            source={require('../../../../assets/images/emoji.png')}
+            source={require('../../../assets/images/emoji.png')}
           />
           <TextInput
             style={style.input}
@@ -91,17 +89,17 @@ export default function Friends({navigation}) {
           />
           <Image
             style={style.line}
-            source={require('../../../../assets/images/line.png')}
+            source={require('../../../assets/images/line.png')}
           />
           <Image
             style={style.camera}
-            source={require('../../../../assets/images/camera.png')}
+            source={require('../../../assets/images/camera.png')}
           />
         </View>
       </View>
       <Image
         style={style.microphone}
-        source={require('../../../../assets/images/microphone(1).png')}
+        source={require('../../../assets/images/microphone(1).png')}
       />
     </View>
   );
