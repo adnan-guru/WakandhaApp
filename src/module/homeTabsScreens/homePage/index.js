@@ -1,7 +1,7 @@
 import React from 'react';
-import ProfileCard from '../../../../commonComponents/homeProfileCard/HomeProfileCard.js';
-import image from '../../../../assets/images/MaskGroup.png';
-import image2 from '../../../../assets/images/MaskGroup(1).png';
+import ProfileCard from '../../../commonComponents/homeProfileCard/HomeProfileCard.js';
+import image from '../../../assets/images/MaskGroup.png';
+import image2 from '../../../assets/images/MaskGroup(1).png';
 
 import {
   ScrollView,
@@ -19,28 +19,28 @@ export default function HomePage({navigation}) {
     {title: "+ Add Wak 's"},
     {
       title: "+ Add Wak 's",
-      image: require('../../../../assets/images/UserStory(4).png'),
+      image: require('../../../assets/images/UserStory(4).png'),
     },
     {
       title: "+ Add Wak 's",
-      image: require('../../../../assets/images/UserStory(3).png'),
+      image: require('../../../assets/images/UserStory(3).png'),
     },
     {
       title: "+ Add Wak 's",
-      image: require('../../../../assets/images/UserStory(2).png'),
+      image: require('../../../assets/images/UserStory(2).png'),
     },
     {title: "+ Add Wak 's"},
     {
       title: "+ Add Wak 's",
-      image: require('../../../../assets/images/UserStory(4).png'),
+      image: require('../../../assets/images/UserStory(4).png'),
     },
     {
       title: "+ Add Wak 's",
-      image: require('../../../../assets/images/UserStory(3).png'),
+      image: require('../../../assets/images/UserStory(3).png'),
     },
     {
       title: "+ Add Wak 's",
-      image: require('../../../../assets/images/UserStory(2).png'),
+      image: require('../../../assets/images/UserStory(2).png'),
     },
   ];
   return (
@@ -61,7 +61,7 @@ export default function HomePage({navigation}) {
               <TouchableOpacity
                 onPress={() => navigation.navigate('UserProfile')}>
                 <Image
-                  source={require('../../../../assets/images/Ellipse4(2).png')}
+                  source={require('../../../assets/images/Ellipse4(2).png')}
                 />
               </TouchableOpacity>
 
@@ -73,7 +73,7 @@ export default function HomePage({navigation}) {
               </View>
               <Image
                 style={style.cardDotImg}
-                source={require('../../../../assets/icons/More.png')}
+                source={require('../../../assets/icons/More.png')}
               />
             </View>
             <ImageBackground source={image} style={style.cardBgImage}>
@@ -81,56 +81,56 @@ export default function HomePage({navigation}) {
                 <TouchableOpacity>
                   <Image
                     style={style.thumbImg}
-                    source={require('../../../../assets/images/thumb.png')}
+                    source={require('../../../assets/images/thumb.png')}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity>
                   <Image
                     style={style.thumbImg}
-                    source={require('../../../../assets/images/emoji1.png')}
+                    source={require('../../../assets/images/emoji1.png')}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity>
                   <Image
                     style={style.thumbImg}
-                    source={require('../../../../assets/images/emoji2.png')}
+                    source={require('../../../assets/images/emoji2.png')}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity>
                   <Image
                     style={style.thumbImg}
-                    source={require('../../../../assets/images/emoji3.png')}
+                    source={require('../../../assets/images/emoji3.png')}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity>
                   <Image
                     style={style.thumbImg}
-                    source={require('../../../../assets/images/emoji4.png')}
+                    source={require('../../../assets/images/emoji4.png')}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity>
                   <Image
                     style={style.thumbImg}
-                    source={require('../../../../assets/images/emoji5.png')}
+                    source={require('../../../assets/images/emoji5.png')}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity>
                   <Image
                     style={style.thumbImg}
-                    source={require('../../../../assets/images/emoji6.png')}
+                    source={require('../../../assets/images/emoji6.png')}
                   />
                 </TouchableOpacity>
 
                 <TouchableOpacity>
                   <Image
                     style={style.thumbImg}
-                    source={require('../../../../assets/images/emoji7.png')}
+                    source={require('../../../assets/images/emoji7.png')}
                   />
                 </TouchableOpacity>
               </View>
@@ -138,19 +138,19 @@ export default function HomePage({navigation}) {
             <View style={style.iconsView}>
               <Image
                 style={style.icon}
-                source={require('../../../../assets/icons/share(1).png')}
+                source={require('../../../assets/icons/share(1).png')}
               />
               <Image
                 style={style.icon}
-                source={require('../../../../assets/icons/comment.png')}
+                source={require('../../../assets/icons/comment.png')}
               />
               <Image
                 style={style.icon}
-                source={require('../../../../assets/icons/heartcopy.png')}
+                source={require('../../../assets/icons/heartcopy.png')}
               />
               <Image
                 style={style.microIcon}
-                source={require('../../../../assets/icons/share(1).png')}
+                source={require('../../../assets/icons/share(1).png')}
               />
               <Text style={style.cardText}>6 min ago</Text>
             </View>
@@ -160,7 +160,7 @@ export default function HomePage({navigation}) {
           <View style={[style.mainView, style.bgColor]}>
             <View style={style.cardView}>
               <Image
-                source={require('../../../../assets/images/Ellipse4(2).png')}
+                source={require('../../../assets/images/Ellipse4(2).png')}
               />
               <View style={style.textView}>
                 <Text style={style.imageTitle}>Kenneth</Text>
@@ -170,13 +170,13 @@ export default function HomePage({navigation}) {
               </View>
               <Image
                 style={style.cardDotImg}
-                source={require('../../../../assets/icons/More.png')}
+                source={require('../../../assets/icons/More.png')}
               />
             </View>
             <ImageBackground source={image2} style={style.cardBgImage}>
               <Image
                 style={style.postImage}
-                source={require('../../../../assets/icons/Post.png')}
+                source={require('../../../assets/icons/Post.png')}
               />
             </ImageBackground>
           </View>

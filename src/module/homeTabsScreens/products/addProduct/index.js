@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text, ScrollView, View, StatusBar, Image} from 'react-native';
 import {style} from './style.js';
-import Input from '../../../../../commonComponents/input/Input.js';
-import Button from '../../../../../commonComponents/buttons/Button.js';
+import Input from '../../../../commonComponents/input/Input.js';
+import Button from '../../../../commonComponents/buttons/Button.js';
 export default function AddProduct({navigation}) {
   const inputData = [
     {title: 'Title', placeholder: 'Type here'},
@@ -20,7 +20,7 @@ export default function AddProduct({navigation}) {
         <View style={style.headerTextRow}>
           <Image
             style={style.headerImage}
-            source={require('../../../../../assets/images/Ellipse14.png')}
+            source={require('../../../../assets/images/Ellipse14.png')}
           />
           <View>
             <Text style={style.headerText}>Wakakanda </Text>

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Text, ScrollView, View, StatusBar, Image} from 'react-native';
 import {style} from './style.js';
-import VideoCard from '../../../../commonComponents/videoCard';
-import image from '../../../../assets/images/MaskGroup3).png';
+import VideoCard from '../../../commonComponents/videoCard';
+import image from '../../../assets/images/MaskGroup3).png';
 export default function TabVideo({navigation}) {
   return (
     <>
@@ -17,7 +17,7 @@ export default function TabVideo({navigation}) {
       </ScrollView>
       <Image
         style={style.postImage}
-        source={require('../../../../assets/icons/Post.png')}
+        source={require('../../../assets/icons/Post.png')}
       />
     </>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, ScrollView, View, StatusBar, Image} from 'react-native';
 import {style} from './style.js';
-import Card from '../../../../../commonComponents/productCard';
+import Card from '../../../../commonComponents/productCard';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 export default function ProductPage({navigation}) {
@@ -10,27 +10,27 @@ export default function ProductPage({navigation}) {
   };
   const cardData = [
     {
-      image: require('../../../../../assets/images/Rectangle13.png'),
+      image: require('../../../../assets/images/Rectangle13.png'),
       onPress: onPressHandler,
     },
     {
-      image: require('../../../../../assets/images/Rectangle14.png'),
+      image: require('../../../../assets/images/Rectangle14.png'),
       onPress: onPressHandler,
     },
     {
-      image: require('../../../../../assets/images/Rectangle15.png'),
+      image: require('../../../../assets/images/Rectangle15.png'),
       onPress: onPressHandler,
     },
     {
-      image: require('../../../../../assets/images/Rectangle16.png'),
+      image: require('../../../../assets/images/Rectangle16.png'),
       onPress: onPressHandler,
     },
     {
-      image: require('../../../../../assets/images/Rectangle15.png'),
+      image: require('../../../../assets/images/Rectangle15.png'),
       onPress: onPressHandler,
     },
     {
-      image: require('../../../../../assets/images/Rectangle16.png'),
+      image: require('../../../../assets/images/Rectangle16.png'),
       onPress: onPressHandler,
     },
   ];
@@ -46,7 +46,7 @@ export default function ProductPage({navigation}) {
           <Text style={style.subTitle}>Filter </Text>
           <Image
             style={style.icon}
-            source={require('../../../../../assets/icons/Vector(4).png')}
+            source={require('../../../../assets/icons/Vector(4).png')}
           />
         </View>
       </View>
@@ -59,7 +59,7 @@ export default function ProductPage({navigation}) {
       <TouchableOpacity
         style={style.postImage}
         onPress={() => navigation.navigate('AddProduct')}>
-        <Image source={require('../../../../../assets/icons/Post.png')} />
+        <Image source={require('../../../../assets/icons/Post.png')} />
       </TouchableOpacity>
     </ScrollView>
   );

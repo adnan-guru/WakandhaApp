@@ -1,6 +1,6 @@
 import React from 'react';
 import {ScrollView, View, StatusBar, Text, Image} from 'react-native';
-import MenuCard from '../../../../commonComponents/menuCard';
+import MenuCard from '../../../commonComponents/menuCard';
 import {style} from './style.js';
 export default function Notifications({navigation}) {
   const Pages = () => {
@@ -31,7 +31,7 @@ export default function Notifications({navigation}) {
       <View style={style.hrLine} />
       <View style={style.mainView}>
         <View style={style.profileView}>
-          <Image source={require('../../../../assets/images/Ellipse3.png')} />
+          <Image source={require('../../../assets/images/Ellipse3.png')} />
           <View>
             <Text style={style.profileTitle}>Joshwell Valdaz</Text>
             <Text style={style.profileSubTitle}>See your profile</Text>
@@ -40,7 +40,7 @@ export default function Notifications({navigation}) {
         <View style={style.groupsCardView}>
           <Image
             style={style.icon}
-            source={require('../../../../assets/icons/Vector(6).png')}
+            source={require('../../../assets/icons/Vector(6).png')}
           />
           <View style={style.groupCardTextView}>
             <Text style={style.groupCardText}>Groups</Text>
@@ -83,7 +83,7 @@ export default function Notifications({navigation}) {
       </View>
       <Image
         style={style.postImage}
-        source={require('../../../../assets/icons/Post.png')}
+        source={require('../../../assets/icons/Post.png')}
       />
     </ScrollView>
   );

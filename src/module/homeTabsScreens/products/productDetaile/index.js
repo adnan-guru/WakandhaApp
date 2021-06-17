@@ -8,23 +8,23 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from 'react-native';
-import image from '../../../../../assets/images/Rectangle13(2).png';
+import image from '../../../../assets/images/Rectangle13(2).png';
 import {style} from './style.js';
-import Card from '../../../../../commonComponents/productCard';
+import Card from '../../../../commonComponents/productCard';
 
 export default function TabVideo({navigation}) {
   const cardData = [
     {
-      image: require('../../../../../assets/images/Rectangle13.png'),
+      image: require('../../../../assets/images/Rectangle13.png'),
     },
     {
-      image: require('../../../../../assets/images/Rectangle14.png'),
+      image: require('../../../../assets/images/Rectangle14.png'),
     },
     {
-      image: require('../../../../../assets/images/Rectangle15.png'),
+      image: require('../../../../assets/images/Rectangle15.png'),
     },
     {
-      image: require('../../../../../assets/images/Rectangle16.png'),
+      image: require('../../../../assets/images/Rectangle16.png'),
     },
   ];
   return (
@@ -33,9 +33,9 @@ export default function TabVideo({navigation}) {
       <ImageBackground source={image} style={style.image}>
         <View style={style.imageIcon}>
           <TouchableOpacity onPress={() => navigation.navigate('Tabs')}>
-            <Image source={require('../../../../../assets/icons/Back.png')} />
+            <Image source={require('../../../../assets/icons/Back.png')} />
           </TouchableOpacity>
-          <Image source={require('../../../../../assets/icons/More(1).png')} />
+          <Image source={require('../../../../assets/icons/More(1).png')} />
         </View>
       </ImageBackground>
       <View style={style.imageTitleView}>
@@ -48,28 +48,28 @@ export default function TabVideo({navigation}) {
         <View style={style.iconCircle}>
           <Image
             style={style.circleIcon}
-            source={require('../../../../../assets/icons/Shape(1).png')}
+            source={require('../../../../assets/icons/Shape(1).png')}
           />
           <Text style={style.circleIconText}>Like </Text>
         </View>
         <View style={style.iconCircle}>
           <Image
             style={style.circleIcon}
-            source={require('../../../../../assets/icons/Rectangle15.png')}
+            source={require('../../../../assets/icons/Rectangle15.png')}
           />
           <Text style={style.circleIconText}>Save </Text>
         </View>
         <View style={style.iconCircle}>
           <Image
             style={style.circleIcon}
-            source={require('../../../../../assets/icons/Vector(5).png')}
+            source={require('../../../../assets/icons/Vector(5).png')}
           />
           <Text style={style.circleIconText}>Share </Text>
         </View>
         <View style={style.iconCircle}>
           <Image
             style={style.circleIcon}
-            source={require('../../../../../assets/icons/cart1.png')}
+            source={require('../../../../assets/icons/cart1.png')}
           />
           <Text style={style.circleIconText}>Buy </Text>
         </View>
@@ -90,7 +90,7 @@ export default function TabVideo({navigation}) {
             <View style={style.cardHeaderTextRow}>
               <Image
                 style={style.cardHeaderImage}
-                source={require('../../../../../assets/images/Ellipse14.png')}
+                source={require('../../../../assets/images/Ellipse14.png')}
               />
               <View>
                 <Text style={style.cardHeaderText}>Wakakanda </Text>
