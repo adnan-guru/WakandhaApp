@@ -1,5 +1,12 @@
 import React from 'react';
-import {ScrollView, View, StatusBar, Text, Image} from 'react-native';
+import {
+  ScrollView,
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  Touchable,
+} from 'react-native';
 import NotificationCard from '../../../commonComponents/notificationCard';
 import {style} from './style.js';
 export default function Notifications({navigation}) {
@@ -39,18 +46,21 @@ export default function Notifications({navigation}) {
     },
   ];
   return (
-    <ScrollView style={style.container}>
-      <StatusBar backgroundColor="blue" barStyle="light-content" />
-      <Text style={style.title}>Notification</Text>
-      <View style={style.hrLine} />
-      <Text style={style.subTitle}>New</Text>
-      {cardData.map(item => {
-        return <NotificationCard item={item} />;
-      })}
-      <Image
-        style={style.postImage}
-        source={require('../../../assets/icons/Post.png')}
-      />
-    </ScrollView>
+    <View style={style.container}>
+      <ScrollView>
+        <Text style={style.title}>Notification</Text>
+        <View style={style.hrLine} />
+        <Text style={style.subTitle}>New</Text>
+        {cardData.map(item => {
+          return <NotificationCard item={item} />;
+        })}
+      </ScrollView>
+      <TouchableOpacity>
+        <Image
+          style={style.postImage}
+          source={require('../../../assets/icons/Post.png')}
+        />
+      </TouchableOpacity>
+    </View>
   );
 }

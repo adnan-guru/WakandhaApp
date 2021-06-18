@@ -1,19 +1,11 @@
 import React from 'react';
-import {
-  ScrollView,
-  StatusBar,
-  View,
-  Image,
-  Text,
-  TextInput,
-} from 'react-native';
+import {ScrollView, View, Image, Text, TextInput} from 'react-native';
 import {style} from './style.js';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import Card from '../../../commonComponents/chatDetail1Card/ChatDetail1Card.js';
 export default function Friends({navigation}) {
   return (
     <View style={style.container}>
-      <StatusBar backgroundColor="blue" barStyle="light-content" />
       <View style={style.header}>
         <View style={style.row}>
           <TouchableOpacity onPress={() => navigation.goBack()}>

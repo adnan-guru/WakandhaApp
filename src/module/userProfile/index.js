@@ -14,7 +14,7 @@ import image from '../../assets/images/MaskGroup.png';
 export default function UserProfile({navigation}) {
   return (
     <View style={style.container}>
-      <StatusBar backgroundColor="blue" barStyle="light-content" />
+      <StatusBar backgroundColor="black" barStyle="light-content" />
 
       <ScrollView>
         <View>

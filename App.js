@@ -4,8 +4,9 @@ import Navigation from './src/navigation';
 
 export default function App() {
   return (
-    <View style={{flex: 1, backgroundColor: '#2B2B2B'}}>
-      <StatusBar backgroundColor="#2B2B2B" barStyle="light-content" />
+    // eslint-disable-next-line react-native/no-inline-styles
+    <View style={{flex: 1, backgroundColor: 'black'}}>
+      <StatusBar backgroundColor="black" barStyle="light-content" />
       <Navigation />
     </View>
   );

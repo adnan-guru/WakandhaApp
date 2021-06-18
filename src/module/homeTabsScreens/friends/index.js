@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, View, StatusBar, Text, Image} from 'react-native';
+import {ScrollView, View, Text, Image, TouchableOpacity} from 'react-native';
 import {style} from './style.js';
 import FriendCard from '../../../commonComponents/friendsCard/FriendsCard.js';
 export default function Friends({navigation}) {
@@ -11,25 +11,28 @@ export default function Friends({navigation}) {
     {image: require('../../../assets/images/Group13(3).png')},
   ];
   return (
-    <ScrollView style={style.container}>
-      <StatusBar backgroundColor="blue" barStyle="light-content" />
-      <View style={style.headerTextView}>
-        <View style={style.titleView}>
-          <Text style={style.title}>Friends</Text>
+    <View style={{flex: 1}}>
+      <ScrollView style={style.container}>
+        <View style={style.headerTextView}>
+          <View style={style.titleView}>
+            <Text style={style.title}>Friends</Text>
+          </View>
+          <View style={style.subTitleView}>
+            <Text style={style.subTitle}>Suggestion</Text>
+            <Text style={style.subTitle}>All Friends </Text>
+          </View>
         </View>
-        <View style={style.subTitleView}>
-          <Text style={style.subTitle}>Suggestion</Text>
-          <Text style={style.subTitle}>All Friends </Text>
-        </View>
-      </View>
-      <View style={style.hrLine} />
-      {cardData.map(item => {
-        return <FriendCard item={item} />;
-      })}
-      <Image
-        style={style.postIcon}
-        source={require('../../../assets/icons/Post.png')}
-      />
-    </ScrollView>
+        <View style={style.hrLine} />
+        {cardData.map(item => {
+          return <FriendCard item={item} />;
+        })}
+      </ScrollView>
+      <TouchableOpacity>
+        <Image
+          style={style.postIcon}
+          source={require('../../../assets/icons/Post.png')}
+        />
+      </TouchableOpacity>
+    </View>
   );
 }

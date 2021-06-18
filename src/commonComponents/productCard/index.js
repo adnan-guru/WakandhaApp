@@ -4,7 +4,6 @@ import {style} from './style.js';
 
 export default function ProductCard({item}) {
   return (
-    // <View style={style.cardView}>
     <View style={style.card}>
       <TouchableOpacity onPress={item.onPress}>
         <Image
@@ -20,6 +19,5 @@ export default function ProductCard({item}) {
         Black Yellow print geor..
       </Text>
     </View>
-    // </View>
   );
 }

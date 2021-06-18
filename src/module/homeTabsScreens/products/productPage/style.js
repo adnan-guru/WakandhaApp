@@ -49,8 +49,8 @@ export const style = StyleSheet.create({
     marginTop: 17,
   },
   postImage: {
-    alignSelf: 'flex-end',
-    marginTop: -40,
-    marginRight: -20,
+    position: 'absolute',
+    bottom: 20,
+    right: 0,
   },
 });

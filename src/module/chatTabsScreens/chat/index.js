@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, StatusBar, View, Image} from 'react-native';
+import {ScrollView, View, Image} from 'react-native';
 import {style} from './style.js';
 import Card from '../../../commonComponents/chatTabCard/ChatTabCard.js';
 import {TouchableOpacity} from 'react-native-gesture-handler';
@@ -57,7 +57,6 @@ export default function Chat({navigation}) {
   return (
     <View style={style.container}>
       <ScrollView>
-        <StatusBar backgroundColor="blue" barStyle="light-content" />
         <View style={{marginBottom: 71}}>
           {cardData.map(item => {
             return <Card item={item} />;

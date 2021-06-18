@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   ScrollView,
-  StatusBar,
   View,
   Image,
   Text,
@@ -14,8 +13,6 @@ import image from '../../assets/images/MaskGroup(1).png';
 export default function UserProfile({navigation}) {
   return (
     <View style={style.container}>
-      <StatusBar backgroundColor="blue" barStyle="light-content" />
-
       <ScrollView>
         <View>
           <Image

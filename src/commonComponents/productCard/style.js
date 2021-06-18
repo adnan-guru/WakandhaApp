@@ -1,8 +1,5 @@
 import {StyleSheet} from 'react-native';
 export const style = StyleSheet.create({
-  // cardView: {
-  //   marginTop: 27,
-  // },
   card: {
     width: '48%',
     height: 239,
@@ -15,7 +12,6 @@ export const style = StyleSheet.create({
     marginTop: 21,
   },
   cardSubText: {
-    marginTop: 7,
-    marginBottom: 50,
+    marginTop: 0,
   },
 });

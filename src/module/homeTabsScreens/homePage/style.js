@@ -37,12 +37,10 @@ export const style = StyleSheet.create({
     marginTop: 4,
   },
   cardDotImg: {
-    position: 'absolute',
-    right: 5,
-    top: 11,
+    marginLeft: 110,
+    marginTop: 11,
   },
   cardBgImage: {
-    flex: 1,
     width: '100%',
     height: 176,
     resizeMode: 'cover',
@@ -55,7 +53,7 @@ export const style = StyleSheet.create({
     backgroundColor: '#121219',
     borderRadius: 112.069,
     position: 'absolute',
-    bottom: 19,
+    bottom: 0,
     alignSelf: 'center',
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -68,6 +66,7 @@ export const style = StyleSheet.create({
   iconsView: {
     flexDirection: 'row',
     justifyContent: 'space-around',
+    marginTop: 15,
   },
   icon: {
     width: 22,
@@ -83,5 +82,72 @@ export const style = StyleSheet.create({
   postImage: {
     position: 'absolute',
     right: -20,
+    bottom: 0,
+  },
+  //
+  centeredView: {
+    flex: 1,
+  },
+  modalView: {
+    backgroundColor: 'white',
+    borderRadius: 20,
+    height: 400,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    borderBottomRightRadius: 0,
+    borderBottomLeftRadius: 0,
+    position: 'absolute',
+    width: '100%',
+    bottom: 0,
+
+    padding: 35,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+
+  modalIcon: {
+    marginLeft: -15,
+  },
+  modalText: {
+    fontSize: 15,
+    marginLeft: 10,
+    marginTop: 3,
+    fontWeight: 'bold',
+  },
+  hrLine: {
+    width: '125%',
+    height: 1,
+    backgroundColor: 'gray',
+    marginLeft: -40,
+    marginTop: 15,
+  },
+  madalRow: {
+    flexDirection: 'row',
+  },
+  modalSubIcon: {
+    marginTop: 10,
+  },
+  modalSubText: {
+    marginTop: 13,
+  },
+  modalButton: {
+    width: 30,
+    height: 30,
+    borderRadius: 50,
+    backgroundColor: '#DDB937',
+    alignSelf: 'flex-end',
+    marginTop: -25,
+    marginRight: -20,
+  },
+  back: {
+    fontSize: 20,
+    textAlign: 'center',
+    color: 'red',
   },
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 import {style} from './FriendsCardStyle.js';
 
 export default function FriendsCard({item}) {
@@ -15,14 +15,18 @@ export default function FriendsCard({item}) {
           <Text style={[style.cardSubTitle, style.time]}>10h</Text>
         </View>
         <View style={style.buttonView}>
-          <View style={style.button}>
-            <Text style={style.buttonText}>Confirm</Text>
-          </View>
-          <View style={[style.button, style.bgColor]}>
-            <Text style={[style.buttonText, style.buttonTextColor]}>
-              Delete
-            </Text>
-          </View>
+          <TouchableOpacity>
+            <View style={style.button}>
+              <Text style={style.buttonText}>Confirm</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <View style={[style.button, style.bgColor]}>
+              <Text style={[style.buttonText, style.buttonTextColor]}>
+                Delete
+              </Text>
+            </View>
+          </TouchableOpacity>
         </View>
       </View>
     </View>

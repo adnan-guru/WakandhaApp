@@ -102,7 +102,7 @@ export const style = StyleSheet.create({
   },
   postImage: {
     position: 'absolute',
-    top: 570,
-    right: 3,
+    right: -20,
+    bottom: 20,
   },
 });

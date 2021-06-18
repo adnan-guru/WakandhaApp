@@ -1,10 +1,9 @@
-import {colors} from '../../../constant/color';
 import {StyleSheet} from 'react-native';
 export const style = StyleSheet.create({
   container: {
     flex: 1,
     width: '100%',
-    backgroundColor: colors.secondryColor,
+    backgroundColor: 'black',
   },
   logo: {
     width: 92,

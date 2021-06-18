@@ -69,6 +69,7 @@ export const style = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     marginTop: 24,
+    marginBottom: 10,
   },
   icon: {
     width: 22,

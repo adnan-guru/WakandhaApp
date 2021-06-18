@@ -38,7 +38,8 @@ export const style = StyleSheet.create({
     justifyContent: 'space-between',
   },
   postIcon: {
-    alignSelf: 'flex-end',
-    marginTop: -80,
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
   },
 });
